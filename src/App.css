@@ -11,6 +11,8 @@ label {
 
 header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: sans-serif;    
 }
 
 /* typography */
@@ -36,16 +38,30 @@ td {
   padding: 10px;
   text-align: center;
 }
+td img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
 
 /* table */
 
 table {
   table-layout: fixed;
+  max-height: 150px;
   width: 100%;
   border-collapse: collapse;
-  overflow:hidden;
+  overflow:auto;
+  /* border: 2px solid black; */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
+
+tbody tr:nth-child(odd) {
+  background-color: #D2B48C; 
+}
+
 
 .content_td p {
   max-width: 100%;
@@ -58,3 +74,7 @@ table {
 
 
 /* Column size for tbody */
+.recipe-list{
+  max-width:100%;
+  max-height:50%;
+}
