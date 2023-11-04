@@ -76,7 +76,7 @@ function RecipeCreate({createRecipe}) {
             onChange={handleChange}    
             value={formData.ingredients}  
             rows={3} 
-            defaultValue="Ingredients"/></td>
+            /></td>
             <td><textarea 
             id="preparation" 
             name="preparation"
@@ -84,7 +84,7 @@ function RecipeCreate({createRecipe}) {
             onChange={handleChange}
             value={formData.preparation}  
             rows={3} 
-            defaultValue="Preparation"/></td>
+            /></td>
             <td>
               <button type="submit">Create</button>
             </td>

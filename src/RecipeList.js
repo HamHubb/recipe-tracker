@@ -42,8 +42,8 @@ function RecipeList({recipes, deleteRecipe}) {
             <td>{current.name}</td>
             <td>{current.cuisine}</td>
             <td><img src={current.photo} alt="cuisinePhoto" /></td>
-            <td>{current.ingredients}</td>
-            <td>{current.preparation}</td>
+            <td className="tdScroll" >{current.ingredients}</td>
+            <td className="tdScroll" >{current.preparation}</td>
             <td>
               <button name="delete" onClick={()=>deleteRecipe(index)}>Delete</button>
             </td>
